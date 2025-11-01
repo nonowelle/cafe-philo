@@ -176,10 +176,11 @@ nav {
     display: flex;
     font-size: 32px;
     gap: 24px;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .company {
@@ -199,6 +200,34 @@ nav {
 .slogan {
     font-size: 1rem;
     margin-bottom: 0;
+    width: 100%;
+    order: 3;
+    text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+    .first-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .company {
+        order: 1;
+        width: auto;
+    }
+
+    .menu-icon,
+    .close-button {
+        order: 2;
+        position: absolute;
+        top: 48px;
+        right: 36px;
+    }
+
+    .slogan {
+        order: 3;
+    }
 }
 
 .second-section {
@@ -303,7 +332,15 @@ nav {
     .first-section {
         width: auto;
         align-self: auto;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
+    .slogan {
+        width: auto;
+        order: initial;
+        text-align: initial;
     }
 
     .second-section {
