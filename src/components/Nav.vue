@@ -44,7 +44,10 @@ const openMobileNav = () => {
             <div class="company">
                 <img class="logo" src="../assets/logo.png" alt="logo cafe philo">
                 <p class="company">caféphilo</p>
+
             </div>
+            <span class="separator">|</span>
+            <p class="slogan">filosofía, but the fun one</p>
 
             <div class="close-button" @click="closeMobileNav">X</div>
             <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
@@ -169,8 +172,6 @@ nav {
     }
 }
 
-
-
 .first-section {
     display: flex;
     font-size: 32px;
@@ -191,7 +192,14 @@ nav {
     padding: 3px;
 }
 
+.separator {
+    display: none;
+}
 
+.slogan {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
 
 .second-section {
     display: none;
@@ -217,7 +225,7 @@ nav {
 
     font-size: 1.3rem;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     transition: none;
     position: relative;
 
@@ -287,9 +295,13 @@ nav {
 
     }
 
+    .separator {
+        font-size: 1.2rem;
+        display: block;
+    }
 
     .first-section {
-        width: 30%;
+        width: auto;
         align-self: auto;
 
     }
