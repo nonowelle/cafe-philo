@@ -29,15 +29,20 @@ const props = defineProps<TextContentProps>();
 
 <style lang="scss" scoped>
 .text-section {
-    height: calc(100vh + 136px);
+    height: auto;
     width: 100%;
-    padding: 48px;
+    padding: 100px 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     scroll-snap-align: center;
+
+    @media screen and (max-width: 1024px) {
+        padding: 50px 24px;
+
+    }
 
     h2 {
         max-width: 80%;
@@ -49,12 +54,7 @@ const props = defineProps<TextContentProps>();
     }
 
     p {
-        max-width: 60%;
-
-        @media screen and (max-width: 1024px) {
-            max-width: none;
-
-        }
+        max-width: 800px;
     }
 
 }

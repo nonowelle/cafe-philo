@@ -29,8 +29,13 @@ const { currentContent } = useLanguage();
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 5rem 3rem;
+
+    padding: 100px 48px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 50px 24px;
+
+    }
 }
 
 .socials {
