@@ -44,7 +44,10 @@ const openMobileNav = () => {
             <div class="company">
                 <img class="logo" src="../assets/logo.png" alt="logo cafe philo">
                 <p class="company">caféphilo</p>
+
             </div>
+            <span class="separator">|</span>
+            <p class="slogan">filosofía, but the fun one</p>
 
             <div class="close-button" @click="closeMobileNav">X</div>
             <div class="menu-icon" @click="openMobileNav" ref="menuIcon">
@@ -106,7 +109,7 @@ nav {
 
 
     border-radius: 0;
-    border-bottom: 1px solid var(--color-links);
+    border-bottom: 1px solid #f2d680;
     padding-bottom: 1rem;
     transition: max-height 0.4s linear;
     position: sticky;
@@ -169,16 +172,15 @@ nav {
     }
 }
 
-
-
 .first-section {
     display: flex;
     font-size: 32px;
     gap: 24px;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .company {
@@ -191,7 +193,42 @@ nav {
     padding: 3px;
 }
 
+.separator {
+    display: none;
+}
 
+.slogan {
+    font-size: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+    order: 3;
+    text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+    .first-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .company {
+        order: 1;
+        width: auto;
+    }
+
+    .menu-icon,
+    .close-button {
+        order: 2;
+        position: absolute;
+        top: 48px;
+        right: 36px;
+    }
+
+    .slogan {
+        order: 3;
+    }
+}
 
 .second-section {
     display: none;
@@ -217,7 +254,7 @@ nav {
 
     font-size: 1.3rem;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     transition: none;
     position: relative;
 
@@ -275,7 +312,7 @@ nav {
         gap: 1.5rem;
         padding: 16px;
 
-        border-bottom: 1px solid var(--color-links);
+        border-bottom: 1px solid #f2d680;
 
         .close-button {
             display: none;
@@ -287,11 +324,23 @@ nav {
 
     }
 
+    .separator {
+        font-size: 1.2rem;
+        display: block;
+    }
 
     .first-section {
-        width: 30%;
+        width: auto;
         align-self: auto;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
+    .slogan {
+        width: auto;
+        order: initial;
+        text-align: initial;
     }
 
     .second-section {

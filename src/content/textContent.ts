@@ -6,7 +6,7 @@ export const textContent = {
         title: "what?",
         subtitle: "philosophy but the fun one",
         description: "caféphilo is a meeting space to converse, reflect and share, where philosophy connects with culture and everyday life.\n\n",
-        descriptionDeux: "the concept is inspired by French café philo, created in the 90s, which turned cafés into scenarios of open and accessible debate.\n\nWe bring this tradition to Madrid, in collaboration with the <a href=\"https://www.lacademiaarteyciencia.com/\">academy of art and science</a>.\n"
+        descriptionDeux: "the concept is inspired by French café philo, created in the 90s, which turned cafés into scenarios of open and accessible debate.\n\nWe bring this tradition to Madrid, in collaboration with the <a href=\"https://www.laacademiaarteyciencia.com/\">academy of art and science</a>.\n"
       },
       {
         sectionId: "2",
@@ -18,8 +18,8 @@ export const textContent = {
       {
         sectionId: "3",
         title: "i'm in",
-        subtitle: "next session in october",
-        description: "do not miss it",
+        subtitle: "",
+        description: "",
         descriptionDeux: "",
         hasForm: true
       }
@@ -64,7 +64,7 @@ export const textContent = {
         title: "¿qué?",
         subtitle: "filosofía pero la divertida",
         description: "caféphilo es un espacio de encuentro para conversar, reflexionar y compartir, donde la filosofía se conecta con la cultura y la vida cotidiana.\n\n",
-        descriptionDeux: "el concepto se inspira en los café philo franceses, creados en los años 90, que convirtieron a los cafés en escenarios de debate abierto y accesible.\n\nTraemos esa tradición a Madrid, en colaboración con la <a href=\"https://www.lacademiaarteyciencia.com/\">academia de arte y ciencia</a>.\n"
+        descriptionDeux: "el concepto se inspira en los café philo franceses, creados en los años 90, que convirtieron a los cafés en escenarios de debate abierto y accesible.\n\nTraemos esa tradición a Madrid, en colaboración con la <a href=\"https://www.laacademiaarteyciencia.com/\">academia de arte y ciencia</a>.\n"
       },
       {
         sectionId: "2",
@@ -76,8 +76,8 @@ export const textContent = {
       {
         sectionId: "3",
         title: "me apunto",
-        subtitle:'próxima sesión en octubre',
-        description: "no te lo pierdas",
+        subtitle:'',
+        description: "",
         descriptionDeux: "",
         hasForm: true
       }
