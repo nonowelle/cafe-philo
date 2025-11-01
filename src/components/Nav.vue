@@ -106,7 +106,7 @@ nav {
 
 
     border-radius: 0;
-    border-bottom: 1px solid var(--color-links);
+    border-bottom: 1px solid #f2d680;
     padding-bottom: 1rem;
     transition: max-height 0.4s linear;
     position: sticky;
@@ -275,7 +275,7 @@ nav {
         gap: 1.5rem;
         padding: 16px;
 
-        border-bottom: 1px solid var(--color-links);
+        border-bottom: 1px solid #f2d680;
 
         .close-button {
             display: none;
