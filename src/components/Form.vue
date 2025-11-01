@@ -189,7 +189,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 
 }
 
